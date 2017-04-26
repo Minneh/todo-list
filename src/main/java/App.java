@@ -80,7 +80,7 @@ public class App {
       Category category = Category.find(Integer.parseInt(request.queryParams("categoryId")));
       String description = request.queryParams("description");
       Task newTask = new Task(description);
-      category.add(newTask);
+      category.addTask(newTask);
       model.put("category", category);
       model.put("template", "templates/category-tasks-success.vtl");
       return new ModelAndView(model, layout);
