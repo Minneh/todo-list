@@ -1,3 +1,6 @@
+import java.util.List;
+import java.util.ArrayList;
+
 public class Category{
   private String mName;
   private static List<Category> instances = new ArrayList<Category>();
